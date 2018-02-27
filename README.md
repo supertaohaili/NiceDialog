@@ -13,19 +13,19 @@
 **Step 1. 添加JitPack仓库**
 
 在当前项目根目录下的 `build.gradle` 文件中添加如下内容:
-``` gradle
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
-}
+
 ```
-**Step 2. 添加项目依赖**
-``` gradle
-dependencies {
-        compile 'com.github.Othershe:NiceDialog:1.1.4'
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
 }
+
+dependencies {
+       compile 'com.github.supertaohaili:NiceDialog:1.0.0'
+}
+
 ```
 **Step 3. 配置、展示dialog**
 ```java
@@ -87,3 +87,9 @@ ConfirmDialog.newInstance("1")
              .setOutCancel(false)
              .show(getSupportFragmentManager());
 ```
+
+
+
+### Known Issues
+If you have any questions/queries/Bugs/Hugs please mail @
+taohailili@gmail.com
